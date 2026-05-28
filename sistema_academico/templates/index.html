@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Painel do Sistema Acadêmico</h1>
+
+<div class="cards">
+
+    <div class="card">
+        <h2>{{ counts.alunos }}</h2>
+        <p>Alunos cadastrados</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ counts.professores }}</h2>
+        <p>Professores cadastrados</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ counts.disciplinas }}</h2>
+        <p>Disciplinas cadastradas</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ counts.matriculas }}</h2>
+        <p>Matrículas realizadas</p>
+    </div>
+
+</div>
+
+{% endblock %}
